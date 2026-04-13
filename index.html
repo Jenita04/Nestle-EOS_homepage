@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nestlé AI-EOS - Powered by Infosys</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Unified Background for a high-tech vibe -->
+    <div class="particles" id="particles">
+        <!-- Parallax floating shapes for claymorphism look -->
+        <div class="parallax-shape shape-1" data-parallax="-0.04"></div>
+        <div class="parallax-shape shape-2" data-parallax="0.06"></div>
+        <div class="parallax-shape shape-3" data-parallax="-0.03"></div>
+        <div class="parallax-shape shape-4" data-parallax="0.08"></div>
+        <div class="parallax-shape shape-5" data-parallax="-0.07"></div>
+        
+        <!-- Animated Nestle Background Elements -->
+        <img class="parallax-obj nestle-watermark" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Nestl%C3%A9_logo.svg" alt="Nestle Logo" data-parallax="0.01" />
+    </div>
+
+    <!-- MAIN HOME WRAPPER -->
+    <div id="home-view" class="view-wrapper active">
+        <header class="home-header">
+            <div class="logo-area">
+                <!-- Using a text logo since we don't have images -->
+                <h1 class="brand-text">Nestlé <span class="highlight">AI-EOS</span></h1>
+                <p class="subtitle">Enterprise AI Operating System</p>
+                <div class="powered-by">Powered by <span class="infosys-logo">Infosys</span> Topaz</div>
+            </div>
+            <div class="header-decor"></div>
+        </header>
+
+        <main class="dashboard-main">
+            <div class="cards-grid" id="cards-container">
+                <!-- Cards injected via JS -->
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 Infosys. All rights reserved. Nestlé Demo Environment.</p>
+        </footer>
+    </div>
+
+    <!-- APP VIEWER WRAPPER (Iframe Mode) -->
+    <div id="app-view" class="view-wrapper hidden">
+        <div class="app-topbar">
+            <button id="btn-back" class="nav-btn primary-btn">
+                <i class="ph ph-arrow-left"></i> Home
+            </button>
+            <div class="app-title-area">
+                <i id="app-icon" class="ph ph-squares-four"></i>
+                <h2 id="app-title">Application</h2>
+            </div>
+            <div class="app-actions">
+                <button id="btn-refresh" class="nav-btn icon-btn" title="Refresh App">
+                    <i class="ph ph-arrows-clockwise"></i>
+                </button>
+                <a id="btn-new-tab" class="nav-btn secondary-btn" href="#" target="_blank" title="Unable to load? Open in new tab.">
+                    Open in New Tab <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="iframe-container">
+            <div class="iframe-loader">
+                <div class="spinner"></div>
+                <p>Initializing Module...</p>
+            </div>
+            <iframe id="main-iframe" src="" frameborder="0" allowfullscreen allow="camera; microphone; geolocation"></iframe>
+            <div class="iframe-fallback">
+                <i class="ph ph-warning-circle"></i>
+                <h3>Connection Restricted</h3>
+                <p>This module cannot be embedded directly due to strict security policies from the host provider.</p>
+                <a id="fallback-new-tab" class="fallback-btn" href="#" target="_blank">Access Module Securely in a New Tab</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
