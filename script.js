@@ -14,6 +14,14 @@ const domains = [
         redirect: true
     },
     {
+        id: 'supply-chain',
+        title: 'Supply Chain Workflow',
+        icon: 'ph-truck',
+        color: 'var(--c-sc)',
+        url: 'https://supply-chain-tower.lovable.app/', 
+        desc: 'End-to-end Logistics Tracking & Inventory Optimization'
+    },
+    {
         id: 'hr',
         title: 'Human Resources',
         icon: 'ph-users-three',
@@ -45,14 +53,6 @@ const domains = [
         color: 'var(--c-com)',
         url: 'https://alm-commercial-dashboard.vercel.app/',
         desc: 'Sales Analytics, Market Trends & Supply-Demand Matching'
-    },
-    {
-        id: 'supply-chain',
-        title: 'Supply Chain Workflow',
-        icon: 'ph-truck',
-        color: 'var(--c-sc)',
-        url: 'https://id-preview--8d070d9c-92ba-4772-9d49-82ecfc3afe48.lovable.app/', 
-        desc: 'End-to-end Logistics Tracking & Inventory Optimization'
     }
 ];
 
